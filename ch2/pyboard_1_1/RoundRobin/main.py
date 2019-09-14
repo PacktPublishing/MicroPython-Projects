@@ -21,7 +21,8 @@
 # THE POSSIBILITY OF SUCH DAMAGE.
 #
 ##################################################################################
-import pyb   # For uPython MCU features
+import pyb
+import time
 
 # define LED color constants
 LED_RED = 1
@@ -57,4 +58,5 @@ while True:
     task2()
 
     # Delay 150 ms
-    pyb.delay(150)
+    # pyb.delay(150)
+    time.sleep_ms(150)
