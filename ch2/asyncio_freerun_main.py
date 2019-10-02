@@ -25,32 +25,30 @@
 
 import uasyncio as asyncio
 
-# Function that contains the task code for toggling the blue LED
-async def Led_BlueToggle():
-    while True:
-      pyb.LED(3).toggle()
-      await asyncio.sleep_ms(500)
+# Define LED color constants
+LED_RED = 1
+LED_GREEN = 2
+LED_YELLOW = 3
+LED_BLUE = 4
 
-    return 
+# Function that contains the task code for toggling the blue LED
+async def task1():
+    while True:
+      pyb.LED(LED_BLUE).toggle()
+      await asyncio.sleep_ms(150)
 
 # Function that contains the task code for toggling the yellow LED
-async def Led_YellowToggle():
+async def task2():
     while True:
-      pyb.LED(4).toggle()
-      await asyncio.sleep_ms(500)
-
-    return 
+      pyb.LED(LED_GREEN).toggle()
+      await asyncio.sleep_ms(150)
 
 # Setup the MCU and application code to starting conditions
 # The blue LED will start on, the yellow LED will be off
-def System_Init():
-  print("Initializing system ...")
-  pyb.LED(3).on()
-  pyb.LED(4).off()
-  print("LED's initialized ...")
+pyb.LED(LED_BLUE).on()
+pyb.LED(LED_GREEN).off()
 
-System_Init()
 loop = asyncio.get_event_loop()
-loop.create_task(Led_BlueToggle())
-loop.create_task(Led_YellowToggle())
+loop.create_task(task1())
+loop.create_task(task2())
 loop.run_forever()
