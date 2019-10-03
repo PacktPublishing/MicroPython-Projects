@@ -36,14 +36,14 @@ LED_BLUE = 3
 
 
 # Function that contains the task code for toggling the blue LED
-def task_1(timer):
+def task1(timer):
     pyb.LED(LED_BLUE).toggle()
 
     return 
 
 
 # Function that contains the task code for toggling the yellow LED
-def task_2(timer):
+def task2(timer):
     pyb.LED(LED_GREEN).toggle()
 
     return 
@@ -62,13 +62,13 @@ pyb.LED(LED_GREEN).off()
 # Create task timer for Blue LED
 TimerBlueLed = pyb.Timer(1)
 TimerBlueLed.init(freq=5)
-TimerBlueLed.callback(task_1)
+TimerBlueLed.callback(task1)
 print("Task 1 - Blue LED Toggle initialized ...")
 
 # Create task timer for Green LED
 TimerGreenLed = pyb.Timer(2)
 TimerGreenLed.init(freq=5)
-TimerGreenLed.callback(task_2)
+TimerGreenLed.callback(task2)
 print("Task 2 - Green LED Toggle initialized ...")
 
 # Tracks seconds since program started
