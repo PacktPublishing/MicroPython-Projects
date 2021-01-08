@@ -63,6 +63,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 ## Errata
 * Page 38 (paragraph 4,line 18-19 ), **...for installing the library that you can find at [github link]** the correct GitHub link is: https://github.com/peterhinch/micropython-async
+* Page 27 - **Note: The example in the book is not using the ESP but the pyboard. For the pyboard, the pyb library does exist because it is for that board. Machine is a generic library designed to work across multiple targets.**
 
 ### Related products
 * Hands-On Embedded Programming with Qt  [[Packt]](https://www.packtpub.com/in/application-development/hands-embedded-programming-qt?utm_source=github&utm_medium=repository&utm_campaign=9781789952063) [[Amazon]](https://www.amazon.com/dp/B07PB962Q1)
