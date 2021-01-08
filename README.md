@@ -61,6 +61,9 @@ With the following software and hardware list you can run all code files present
 
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://static.packt-cdn.com/downloads/9781789958034_ColorImages.pdf).
 
+## Errata
+* Page 38 (paragraph 4,line 18-19 ), **...for installing the library that you can find at [github link]** the correct GitHub link is: https://github.com/peterhinch/micropython-async
+
 ### Related products
 * Hands-On Embedded Programming with Qt  [[Packt]](https://www.packtpub.com/in/application-development/hands-embedded-programming-qt?utm_source=github&utm_medium=repository&utm_campaign=9781789952063) [[Amazon]](https://www.amazon.com/dp/B07PB962Q1)
 
